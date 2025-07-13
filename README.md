@@ -16,10 +16,12 @@
 
 ## Installation
 
-Download the latest release from [Releases](https://github.com/your-repo/mockit/releases) or install via `go install`:
+- NOTE: Its recommended to pull the source and build the binary locally to ensure things work on your system
+
+Download the latest release from [Releases](https://https://github.com/nooshkit/dolus/releases) or install via `go install`:
 
 ```bash
-go install github.com/your-repo/dolus@latest
+go install https://github.com/nooshkit/dolus/releases@Latest
 ```
 
 ## Usage

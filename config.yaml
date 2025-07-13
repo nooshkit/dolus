@@ -1,0 +1,48 @@
+server:
+  port: 9191 # Required
+  listenaddr: localhost # Required
+paths:
+  /item:
+    get:
+      response: 200
+      content:
+        itemid: 42
+        itemName: "The Answer"
+        itemDetails:
+          price: 420
+          count: 100
+          types:
+            - red: 10
+              blue: 10
+              green: 10
+    post:
+      response: 201
+      content:
+        status: "Item created"
+  /user:
+    get:
+      response: 200
+      content:
+        userId: 1
+        userName: "Alice"
+  /api/v1/locations:
+    get:
+      response: 200
+      headers:
+      content:
+        franchises:
+          - state: GA
+            cities:
+              - Atlanta
+              - Savannah
+              - Macon
+          - state: TX
+            cities:
+              - Austin
+              - Dallas
+              - Houston
+          - state: CA
+            cities:
+              - Los Angeles
+              - San Franciso
+              - San Diego
